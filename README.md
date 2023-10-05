@@ -42,7 +42,9 @@ Profesor: Abel García Najera
 # Antecedentes.
 <p align="justify">
 Una biblioteca requiere un sistema para administrar los préstamos de libros a sus usuarios y a otras bibliotecas. Este sistema debe permitir ingresar un nuevo usuario, una nueva biblioteca en convenio, dar de alta y de baja libros del catálogo, recibir y regresar libros en préstamos de otras bibliotecas, consultar el catálogo y registrar el préstamo de un ejemplar a un usuario o a una biblioteca.
+</p>
 
+<p align="justify">
 Cada libro tiene asignado un identificador único y existen en la biblioteca cierto número de ejemplares por cada libro. Hay dos tipos de préstamo a usuarios de acuerdo con el periodo de préstamo: préstamo regular, que es por dos semanas, y préstamo rápido, que es por dos días. Los préstamos a otras bibliotecas en convenio son por dos meses.
 Un usuario, además de su nombre, tiene un identificador único. Cada usuario puede tener hasta 5 ejemplares en préstamo simultáneamente.
 </p>
@@ -226,6 +228,13 @@ Permiten administrar a los usuarios de la biblioteca, así como realizar un segu
 # Conclusión
 
 ### Abigail Sánchez:
+
+<p align="justify">
+Esta elección de diseño permite modelar entidades clave, como libros, usuarios y bibliotecas, como clases con atributos y métodos específicos. Esto conduce a una organización clara y modular del código, lo que facilita su comprensión y mantenimiento a medida que el proyecto crece.
+Uno de los aspectos es la reutilización de código. A través de la definición de clases y la creación de múltiples instancias de estas, como `Book`, `Usuario_Bi`, `Library_aux` y `Library`, se logra una gestión eficiente de libros, usuarios y bibliotecas. Esto promueve la eficiencia y la consistencia en la gestión de los datos y operaciones relacionadas.
+     
+Y se tiene una validación básica de entradas, lo que contribuye a la robustez del sistema al evitar errores comunes, como ingreso incorrecto de datos. 
+</p> 
 
 
 
