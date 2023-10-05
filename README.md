@@ -111,6 +111,12 @@ En resumen, este problema se puede abordar eficazmente mediante programación or
 
 # Diseño UML.
 
+<p align="center">
+<img src="https://github.com/AGN-Teaching/proyecto-equipo-1/assets/125155934/65aeba7c-cbe7-4a2e-963d-1c361539cad6"/>
+</p>
+
+
+
 # Documentación.
 
 ### **Book:**
