@@ -26,15 +26,15 @@ Profesor: Abel García Najera
 
 ### Índice.
 
-- [Antecedentes.](Antecedentes)
+- [Antecedentes.](#Antecedentes)
 
-- [Análsis del problema.](Análisis-del-problema)
+- [Análsis del problema.](#Análisis-del-problema)
   
-- [Diseño UML.](Diseño-UML)
+- [Diseño UML.](#Diseño-UML)
   
-- [Documentación.](Documentación)
+- [Documentación.](#Documentación)
 
-- [Conlusión.](Conclusión)
+- [Conlusión.](#Conclusión)
 
 
 
