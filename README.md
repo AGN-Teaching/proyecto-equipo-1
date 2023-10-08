@@ -112,7 +112,7 @@ En resumen, este problema se puede abordar eficazmente mediante programación or
 # Diseño UML.
 
 <p align="center">
-<img src="https://github.com/AGN-Teaching/proyecto-equipo-1/assets/125155934/65aeba7c-cbe7-4a2e-963d-1c361539cad6"/>
+<img src="https://github.com/AGN-Teaching/proyecto-equipo-1/assets/125155934/429ed5b1-de8c-4368-8167-195344171b32"/>
 </p>
 
 
@@ -239,9 +239,14 @@ Permiten administrar a los usuarios de la biblioteca, así como realizar un segu
 Esta elección de diseño permite modelar entidades clave, como libros, usuarios y bibliotecas, como clases con atributos y métodos específicos. Esto conduce a una organización clara y modular del código, lo que facilita su comprensión y mantenimiento a medida que el proyecto crece.
 Uno de los aspectos es la reutilización de código. A través de la definición de clases y la creación de múltiples instancias de estas, como `Book`, `Usuario_Bi`, `Library_aux` y `Library`, se logra una gestión eficiente de libros, usuarios y bibliotecas. Esto promueve la eficiencia y la consistencia en la gestión de los datos y operaciones relacionadas.
      
-Y se tiene una validación básica de entradas, lo que contribuye a la robustez del sistema al evitar errores comunes, como ingreso incorrecto de datos. 
+Y se tiene una validación básica de entradas, lo que contribuye al sistema al evitar errores comunes, como ingreso incorrecto de datos. 
 </p> 
 
 
 
 ### Joshua Soria:
+<p align="justify">
+En conclusión, el problema planteado implica la necesidad de desarrollar un sistema de administración de préstamos de libros para una biblioteca, que incluye la gestión de usuarios, bibliotecas en convenio, libros y préstamos. Se utilizaron conceptos de programación orientada a objetos (POO) para crear clases que representen las entidades principales (Libro, Usuario, Biblioteca) con sus atributos y comportamientos específicos. Además, se deben implementar las funcionalidades requeridas, como agregar nuevos usuarios y bibliotecas, dar de alta y baja libros en el catálogo, registrar préstamos y devoluciones, y consultar el catálogo. 
+
+La POO permite una organización clara del código, facilitando su mantenimiento y escalabilidad a medida que se agreguen nuevas características al sistema.
+</p>
