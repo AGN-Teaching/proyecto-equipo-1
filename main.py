@@ -5,7 +5,7 @@ import os
 import time
 
 
-
+# Función para validar si una cadena contiene solo dígitos y convertirla a entero.
 def isdigit(argumento):
     while True:
         if argumento.isdigit():
@@ -17,7 +17,7 @@ def isdigit(argumento):
             continue
     return argumento
 
-
+# Función para mostrar el menú principal y obtener la opción del usuario.
 def mostrar_menu():
     while True:
         os.system('cls')
@@ -51,6 +51,8 @@ if __name__ == "__main__":
 
     while True:
         option = mostrar_menu()
+
+        # Bloque para agregar un nuevo usuario.
         if option == "1":
             os.system('cls')
             user_name, user_last_name, user_edge, user_adress = user_prin.preguntas_agre()
@@ -59,6 +61,7 @@ if __name__ == "__main__":
             print('Tu ID es: ' + user_id)
             time.sleep(3)
 
+        # Bloque para agregar una nueva biblioteca en convenio.
         elif option == "2":
             os.system('cls')
             print('Agregar Libreria'.capitalize())
@@ -69,6 +72,7 @@ if __name__ == "__main__":
             print('Tu ID es: ' + library_id)
             time.sleep(3)
 
+        # Bloque para agregar un libro al catálogo.
         elif option == "3":
             os.system('cls')
             print('Agregar libro al catalogo'.capitalize())
@@ -87,6 +91,7 @@ if __name__ == "__main__":
             print(f"El libro {book_name} agregado correctamente.")
             pass
 
+        # Bloque para dar de baja un libro del catálogo.
         elif option == "4":
             os.system('cls')
             print('Dar de baja libro'.capitalize())
@@ -95,6 +100,7 @@ if __name__ == "__main__":
             main_libray.eliminar_libro(book_name, anser)
             pass
 
+        # Bloque para registrar el préstamo de un libro a un usuario.
         elif option == "5":
             os.system('cls')
             print('Prestamo de Libro'.capitalize())
@@ -107,6 +113,7 @@ if __name__ == "__main__":
             else:
                 print('No se encontro usuario.')
 
+        # Bloque para registrar el préstamo de un libro a una biblioteca en convenio.
         elif option == "6":
             os.system('cls')
             print('Prestamo de Libro'.capitalize())
@@ -119,6 +126,7 @@ if __name__ == "__main__":
             else:
                 print('No se encontro usuario.')
 
+        # Bloque para recibir un libro devuelto de un usuario.
         elif option == "7":
             os.system('cls')
             print('Retorno de Libro'.capitalize())
@@ -130,7 +138,8 @@ if __name__ == "__main__":
                 time.sleep(3)
             else:
                 print('No se encontro usuario.')
-
+                
+        # Bloque para recibir un libro devuelto de una biblioteca en convenio.
         elif option == "8":
             os.system('cls')
             print('Retorno de Libro'.capitalize())
@@ -142,7 +151,8 @@ if __name__ == "__main__":
                 time.sleep(3)
             else:
                 print('No se encontro la biblioteca.')
-
+                
+        # Bloque para consultar el catálogo.
         elif option == "9":
             os.system('cls')
             print("CATÁLOGO:".capitalize())
