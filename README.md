@@ -238,7 +238,7 @@ La reutilización de código, lograda a través de la definición y creación de
 
 Además, la implementación de una validación básica de entradas ha fortalecido la integridad del sistema al prevenir errores comunes, como ingresos de datos incorrectos o inválidos. Esta validación garantiza que la información ingresada por los usuarios esté en el formato y rango esperados, lo que contribuye a la fiabilidad y estabilidad general del sistema de gestión de la biblioteca.
 
-En resumen, la aplicación efectiva de los principios de la programación orientada a objetos ha sido fundamental para el desarrollo de un sistema de gestión de biblioteca completo y altamente funcional. La flexibilidad, la escalabilidad y la claridad estructural proporcionadas por la POO han garantizado un sistema sólido y adaptable, capaz de satisfacer las necesidades cambiantes de la biblioteca y de sus usuarios a lo largo del tiempo.
+En resumen, la aplicación efectiva de los principios de la programación orientada a objetos ha sido fundamental para el desarrollo de un sistema de gestión de biblioteca completo y altamente funcional. La flexibilidad, la escalabilidad y la claridad estructural han garantizado un sistema sólido y adaptable, capaz de satisfacer las necesidades cambiantes de la biblioteca y de sus usuarios a lo largo del tiempo.
 </p> 
 
 
