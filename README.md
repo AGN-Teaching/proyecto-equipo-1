@@ -193,6 +193,7 @@ Permiten administrar a los usuarios de la biblioteca, así como realizar un segu
         - 'buscar_biblioteca': Busca una biblioteca en el catálogo  de bibliotecas en convenio.
         - 'agregar_libreria': Agrega una biblioteca en convenio al catálogo de bibliotecas.
         - 'regresar_libro_biblioteca': Registra la devolución de un libro por parte de una biblioteca en convenio.
+        - 'def anexar_simple(self, objeto): El método toma dos argumentos: self, que se refiere a la instancia de la clase en sí, y objeto, que es el objeto que se va a añadir al catálogo.
 
    En resumen, es una implementación básica de una biblioteca que permite agregar y eliminar libros, gestionar usuarios y realizar préstamos tanto a usuarios como a bibliotecas en convenio.
 </p>
