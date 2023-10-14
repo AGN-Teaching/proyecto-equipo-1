@@ -198,7 +198,26 @@ Permiten administrar a los usuarios de la biblioteca, así como realizar un segu
 </p>
 
 <hr>
+### **construir_Archivo:**
 
+1. *Importación de módulos y clases:*
+   - Se importan las clases *Book* y *Library* desde los módulos correspondientes.
+   - El módulo *pickle* también se importa para facilitar la serialización y deserialización de objetos.
+
+2. **Instancia de la clase Library:**
+   - Se crea una instancia de la clase *Library* y se asigna a la variable *main_library*.
+
+3. *Función guardar_archivo():*
+   - Esta función está diseñada para almacenar una lista de libros en un archivo.
+   - Dentro de la función, se crean diez instancias de la clase *Book* con información específica.
+   - Todos los objetos *Book* se almacenan en una lista llamada *diccionario*.
+   - Se utiliza el módulo *pickle* para serializar la lista *diccionario* y escribirla en un archivo llamado 'Inventory.pickle' en modo de escritura binaria ('wb').
+   - Un mensaje de confirmación se imprime para indicar que el catálogo se ha guardado en 'Inventory.pickle'.
+
+
+En general,  se utiliza para demostrar cómo se pueden crear objetos de la clase *Book*, almacenarlos en una lista y luego guardar la lista en un archivo utilizando el módulo **pickle**.
+
+<hr>
 ### **main:**
 
 
