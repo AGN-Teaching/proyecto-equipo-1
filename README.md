@@ -202,14 +202,14 @@ Permiten administrar a los usuarios de la biblioteca, así como realizar un segu
 
 ### **construir_Archivo:**
 
-1. *Importación de módulos y clases:*
+1. Importación de módulos y clases:
    - Se importan las clases *Book* y *Library* desde los módulos correspondientes.
    - El módulo *pickle* también se importa para facilitar la serialización y deserialización de objetos.
 
-2. *Instancia de la clase Library:*
+2. Instancia de la clase Library:
    - Se crea una instancia de la clase *Library* y se asigna a la variable *main_library*.
 
-3. *Función guardar_archivo():*
+3. Función guardar_archivo():
    - Esta función está diseñada para almacenar una lista de libros en un archivo.
    - Dentro de la función, se crean diez instancias de la clase *Book* con información específica.
    - Todos los objetos *Book* se almacenan en una lista llamada *diccionario*.
