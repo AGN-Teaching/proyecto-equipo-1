@@ -201,34 +201,30 @@ Permiten administrar a los usuarios de la biblioteca, así como realizar un segu
 
 ### **main:**
 
-   Este es el módulo en donde se crea el menú o interfaz para que el usuario interactue.
-   - Importación de módulos:
-     
-     Se importan las clases 'Usuario_Bi' y 'Library' desde los módulos correspondientes ('Usuarios' y 'Library', respectivamente) para su uso en el programa principal.
 
-   - Función 'isdigit':
-     
-     Esta función se encarga de validar si una cadena contiene solo dígitos y la convierte en un entero. Se utiliza para garantizar la entrada de datos válidos.
-  
-   - Función 'mostrar_menu':
-     
-     Esta función muestra un menú de opciones en la consola y solicita al usuario que elija una opción ingresando un número. Esta válida que sea un número entre 0 y 9.
-  
-   - Inicialización de la biblioteca y usuario principal :
-     
-     En esta sección, se crea una instancia de la clase 'Library' llamada *'main_library'* para represetnar la biblioteca principal y otra instancia de la clase 'Usuario_Bi' llamada *'user_prin'* para representar al usuario principal.
-  
-   - Bucle principal:
-     
-     El programa entra en un buvle infinito ('while True') que muestra el menú principal y espera la selección del usuario.
-   
-     Dependiendo de la opción elegida, se ejecutan distintos bloques de código que realizan acciones como agregar usuarios, bibliotecas en convenio, libros al catálogo, registrar préstamos, devoluciones y consultas en el catálogo además de la opción para salir.
+Este módulo se encarga de crear un menú de interfaz para que el usuario interactúe con el sistema de gestión de biblioteca.
 
-     - Cada opción del menú está acompañada de un bloque de código que realiza la acción correspondiente, como agregar un nuevo usuario, aggar una biblioteca en convenio, etc.
-     - Para las acciones de préstamo y devolución de libros, se solicita información adicional, como el nombre del usuario o el nombre del libro. El programa busca y valida esta información utilizando métodos de las clases importadas.
-     - El bucle continuará ejecutándose hasta que el usuario seleccione la opción "0", momento en el cual mostrará un mensaje de despedida y finalizará el programa.
+Importación de módulos:
 
-   En resumen, este programa permite gestionar una biblioteca a través de un menú de opciones, donde se pueden realizar diversas operaciones relacionadas con usuarios, bibliotecas en convenio, libros y préstamos. 
+Se importan las clases *Usuario_Bi* y *Library* desde los módulos correspondientes (*Usuarios* y *Library*, respectivamente) para su uso en el programa principal.
+
+Función **isdigit**:
+
+Esta función verifica si una cadena contiene solo dígitos y la convierte en un entero. Se utiliza para garantizar la entrada de datos válidos.
+
+Inicialización de la biblioteca y el usuario principal:
+
+En esta sección, se crea una instancia de la clase *Library* llamada *main_library* para representar la biblioteca principal y otra instancia de la clase *Usuario_Bi* llamada *user_prin* para representar al usuario principal.
+
+Bucle principal:
+
+El programa entra en un bucle infinito (*while True*) que muestra el menú principal y espera la selección del usuario. Dependiendo de la opción elegida, se ejecutan distintos bloques de código que realizan acciones como agregar usuarios, bibliotecas en convenio, libros al catálogo, registrar préstamos, devoluciones y consultas en el catálogo, además de la opción para salir.
+
+Cada opción del menú está acompañada de un bloque de código que realiza la acción correspondiente, como agregar un nuevo usuario, agregar una biblioteca en convenio, etc. Para las acciones de préstamo y devolución de libros, se solicita información adicional, como el nombre del usuario o el nombre del libro. El programa busca y valida esta información utilizando métodos de las clases importadas. El bucle continuará ejecutándose hasta que el usuario seleccione la opción "0", momento en el cual mostrará un mensaje de despedida y finalizará el programa.
+
+En si, este programa permite gestionar una biblioteca a través de un menú de opciones, donde se pueden realizar diversas operaciones relacionadas con usuarios, bibliotecas en convenio, libros y préstamos. Además, al inicio del código se establece el cargar información de un archivo de catálogo preexistente y agregarla al catálogo principal de la biblioteca.
+     
+     
 
 
 # Conclusión
@@ -236,17 +232,25 @@ Permiten administrar a los usuarios de la biblioteca, así como realizar un segu
 ### Abigail Sánchez:
 
 <p align="justify">
-Esta elección de diseño permite modelar entidades clave, como libros, usuarios y bibliotecas, como clases con atributos y métodos específicos. Esto conduce a una organización clara y modular del código, lo que facilita su comprensión y mantenimiento a medida que el proyecto crece.
-Uno de los aspectos es la reutilización de código. A través de la definición de clases y la creación de múltiples instancias de estas, como `Book`, `Usuario_Bi`, `Library_aux` y `Library`, se logra una gestión eficiente de libros, usuarios y bibliotecas. Esto promueve la eficiencia y la consistencia en la gestión de los datos y operaciones relacionadas.
-     
-Y se tiene una validación básica de entradas, lo que contribuye al sistema al evitar errores comunes, como ingreso incorrecto de datos. 
+El diseño basado en la programación orientada a objetos (POO) ha demostrado ser altamente beneficioso en la implementación del sistema de gestión de la biblioteca. Al modelar entidades clave, como libros, usuarios y bibliotecas, como clases con atributos y métodos específicos, se ha logrado una organización clara y modular del código. Esta estructura modular facilita significativamente el mantenimiento y la comprensión del código a medida que el proyecto continúa evolucionando.
+
+La reutilización de código, lograda a través de la definición y creación de múltiples instancias de clases, ha sido esencial para la gestión eficiente de libros, usuarios y bibliotecas en el sistema. Al utilizar estas clases de manera efectiva, se ha mejorado la eficiencia en la gestión de datos y operaciones, lo que ha permitido una mayor consistencia en todo el sistema.
+
+Además, la implementación de una validación básica de entradas ha fortalecido la integridad del sistema al prevenir errores comunes, como ingresos de datos incorrectos o inválidos. Esta validación garantiza que la información ingresada por los usuarios esté en el formato y rango esperados, lo que contribuye a la fiabilidad y estabilidad general del sistema de gestión de la biblioteca.
+
+En resumen, la aplicación efectiva de los principios de la programación orientada a objetos ha sido fundamental para el desarrollo de un sistema de gestión de biblioteca completo y altamente funcional. La flexibilidad, la escalabilidad y la claridad estructural proporcionadas por la POO han garantizado un sistema sólido y adaptable, capaz de satisfacer las necesidades cambiantes de la biblioteca y de sus usuarios a lo largo del tiempo.
 </p> 
 
 
 
 ### Joshua Soria:
 <p align="justify">
-En conclusión, el problema planteado implica la necesidad de desarrollar un sistema de administración de préstamos de libros para una biblioteca, que incluye la gestión de usuarios, bibliotecas en convenio, libros y préstamos. Se utilizaron conceptos de programación orientada a objetos (POO) para crear clases que representen las entidades principales (Libro, Usuario, Biblioteca) con sus atributos y comportamientos específicos. Además, se deben implementar las funcionalidades requeridas, como agregar nuevos usuarios y bibliotecas, dar de alta y baja libros en el catálogo, registrar préstamos y devoluciones, y consultar el catálogo. 
+Durante el proceso de desarrollo del sistema de administración de préstamos de libros para la biblioteca, la aplicación de los conceptos fundamentales de la programación orientada a objetos (POO) ha sido crucial para la estructura y funcionalidad del sistema. La creación de clases representativas, como Libro, Usuario y Biblioteca, con sus atributos y comportamientos específicos, ha sentado las bases para una implementación eficiente.
 
-La POO permite una organización clara del código, facilitando su mantenimiento y escalabilidad a medida que se agreguen nuevas características al sistema.
+La utilización de la POO ha permitido la implementación de funcionalidades esenciales dentro del sistema, incluyendo la capacidad de agregar y gestionar usuarios, bibliotecas, así como el catálogo de libros. La flexibilidad proporcionada por la POO ha sido fundamental para permitir la escalabilidad y adaptabilidad del sistema a medida que las necesidades y requisitos de la biblioteca evolucionan con el tiempo.
+
+Además, ha permitido una clara separación de preocupaciones en el sistema, lo que ha facilitado la comprensión de cada componente individual y su función en el contexto general del sistema de gestión de la biblioteca. Esta separación ha mejorado la mantenibilidad del sistema y la capacidad de realizar actualizaciones y modificaciones de manera eficiente.
+
+En resumen, la adopción de principios de POO ha proporcionado una base sólida para el desarrollo de un sistema de gestión de biblioteca, al promover una organización clara del código, una reutilización efectiva de recursos y una validación precisa de entradas.
+
 </p>
