@@ -1,3 +1,32 @@
+from book import Book  # Importamos la clase 'Book' desde el módulo 'book'.
+from Usuarios import Usuario_Bi  # Importamos la clase 'Usuario_Bi' desde el módulo 'Usuarios'.
+from library_aux import Library_aux  # Importamos la clase 'Library_aux' desde el módulo 'library_aux'.
+
+
+# Función para buscar un elemento en una colección.
+def buscar(argument, where):
+    answer = False  # Inicializa la variable de respuesta en 'False'.
+    for titulo in where:
+        if titulo == argument:
+            argument = titulo
+            answer = True  # Si encuentra una coincidencia, establece la respuesta en 'True' y sale del bucle.
+            break
+        else:
+            answer = False
+    if not answer:  # Si no se encontró respuesta en la primera iteración, busca utilizando identificadores(ID).
+        for titulo in where:
+            datos = where[titulo].get_id()
+            if argument == datos:
+                answer = True
+                argument = titulo
+                break
+            else:
+                answer = False
+    return answer, argument  # Devuelve la respuesta y el argumento actualizado.
+
+
+# Clase 'Library' para gestionar una biblioteca.
+class Library:
     def __init__(self):
         self.__catalogue = {}   # Diccionario para almacenar información sobre libros.
         self.__users = {}   # Diccionario para almacenar información sobre usuarios.
@@ -13,7 +42,6 @@
         self.__catalogue[book_name] = Book(book_name, book_author, book_available, book_place, book_year,
                                            book_editorial, book_pages)
 
-# Administra el catálogo (objetos).
     def anexar_simple(self, objeto):
         nombre_archivo = objeto.get_title()
         self.__catalogue[nombre_archivo] = objeto
