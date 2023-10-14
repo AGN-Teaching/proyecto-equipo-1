@@ -199,13 +199,14 @@ Permiten administrar a los usuarios de la biblioteca, así como realizar un segu
 </p>
 
 <hr>
+
 ### **construir_Archivo:**
 
 1. *Importación de módulos y clases:*
    - Se importan las clases *Book* y *Library* desde los módulos correspondientes.
    - El módulo *pickle* también se importa para facilitar la serialización y deserialización de objetos.
 
-2. **Instancia de la clase Library:**
+2. *Instancia de la clase Library:*
    - Se crea una instancia de la clase *Library* y se asigna a la variable *main_library*.
 
 3. *Función guardar_archivo():*
@@ -219,26 +220,23 @@ Permiten administrar a los usuarios de la biblioteca, así como realizar un segu
 En general,  se utiliza para demostrar cómo se pueden crear objetos de la clase *Book*, almacenarlos en una lista y luego guardar la lista en un archivo utilizando el módulo **pickle**.
 
 <hr>
+
 ### **main:**
 
 
 Este módulo se encarga de crear un menú de interfaz para que el usuario interactúe con el sistema de gestión de biblioteca.
 
-Importación de módulos:
+- Importación de módulos:
+  Se importan las clases *Usuario_Bi* y *Library* desde los módulos correspondientes (*Usuarios* y *Library*, respectivamente) para su uso en el programa principal.
 
-Se importan las clases *Usuario_Bi* y *Library* desde los módulos correspondientes (*Usuarios* y *Library*, respectivamente) para su uso en el programa principal.
+- Función **isdigit**:
+  Esta función verifica si una cadena contiene solo dígitos y la convierte en un entero. Se utiliza para garantizar la entrada de datos válidos.
 
-Función **isdigit**:
+- Inicialización de la biblioteca y el usuario principal:
+  En esta sección, se crea una instancia de la clase *Library* llamada *main_library* para representar la biblioteca principal y otra instancia de la clase *Usuario_Bi* llamada *user_prin* para representar al usuario principal.
 
-Esta función verifica si una cadena contiene solo dígitos y la convierte en un entero. Se utiliza para garantizar la entrada de datos válidos.
-
-Inicialización de la biblioteca y el usuario principal:
-
-En esta sección, se crea una instancia de la clase *Library* llamada *main_library* para representar la biblioteca principal y otra instancia de la clase *Usuario_Bi* llamada *user_prin* para representar al usuario principal.
-
-Bucle principal:
-
-El programa entra en un bucle infinito (*while True*) que muestra el menú principal y espera la selección del usuario. Dependiendo de la opción elegida, se ejecutan distintos bloques de código que realizan acciones como agregar usuarios, bibliotecas en convenio, libros al catálogo, registrar préstamos, devoluciones y consultas en el catálogo, además de la opción para salir.
+- Bucle principal:
+  El programa entra en un bucle infinito (*while True*) que muestra el menú principal y espera la selección del usuario. Dependiendo de la opción elegida, se ejecutan distintos bloques de código que realizan acciones como agregar usuarios, bibliotecas en convenio, libros al catálogo, registrar préstamos, devoluciones y consultas en el catálogo, además de la opción para salir.
 
 Cada opción del menú está acompañada de un bloque de código que realiza la acción correspondiente, como agregar un nuevo usuario, agregar una biblioteca en convenio, etc. Para las acciones de préstamo y devolución de libros, se solicita información adicional, como el nombre del usuario o el nombre del libro. El programa busca y valida esta información utilizando métodos de las clases importadas. El bucle continuará ejecutándose hasta que el usuario seleccione la opción "0", momento en el cual mostrará un mensaje de despedida y finalizará el programa.
 
